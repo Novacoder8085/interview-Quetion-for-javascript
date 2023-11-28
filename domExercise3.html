@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+        height: 90vh;
+      }
+      #on{
+        color: black;
+        background-color: green;
+        width: 200px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="./img/bulb1.webp"
+      alt="Image is not available at this movment"
+      id="img1" 
+      class="center"
+    /> 
+    <button type="submit" id="on" class="center">Turn on</button>
+  </body>
+  <script>
+    let button = document.getElementById("on");
+    let img = document.getElementById("img1");
+    button.addEventListener("click", function (e) {
+      if (button.textContent.includes("on")) {
+        img.src = "/img/Bulb2.webp";
+        button.textContent = "Turn off";
+      } else {
+        img.src = "/img/bulb1.webp";
+        button.textContent = "Turn on";
+      }
+    });
+  </script>
+</html>

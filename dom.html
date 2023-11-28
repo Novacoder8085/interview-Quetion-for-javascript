@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manipulation</title>
+  </head>
+  <body>
+    <ul id="element">
+      <li class="list-item">First Element</li>
+      <li class="list-item">Second Element</li>
+      <li class="list-item">Third Element</li>
+    </ul>
+
+    <div class="divsClass"> First Div</div>
+    <script>
+      const value = document.querySelectorAll('.divsClass');
+      </script>
+    
+    <div class="divsClass"> Second Div</div>
+    
+    
+    <table border="1">
+      <tr> 
+        <td>First</td>
+        <td>Second</td>
+      </tr>
+      <tr>
+        <td>Third</td>
+        <td>Four</td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    // Root Nodes
+    // console.log(document.documentElement);
+    // console.log(document.body);
+    // console.log(document.head);
+    
+    // for (node of document.body.children) {
+      //   console.log(document.body.childNodes)
+      // }
+      
+      // Child Nodes
+    // console.log(document.body.childNodes)
+    // console.log(document.body.children)
+    
+    // let value = Array.from(document.body.children);
+    // console.log(value);
+    
+    // const sibling = document.body.children[0];
+    // const firstElement = sibling.children[0];
+    // const secondElement = sibling.children[1];
+    // const thirdElement = sibling.children[2];
+    // console.log("this is the firstElement",firstElement);
+    // console.log("this is the secondElement",secondElement.nextElementSibling.textContent);
+    // console.log("this is the thirdElement",thirdElement);
+    // console.log(sibling.nextSibling);
+    
+    // const tableTag = document.body.children[1];
+    // console.log(tableTag.rows[1].cells[1].textContent)
+    
+    // let element = document.getElementById('element');
+    
+    // let ulTag = document.getElementById('element');
+    // ulTag.style.backgroundColor = 'pink'
+    
+    // let listItem = document.getElementsByClassName("list-item");
+    // listItem.style.background = "red";
+    
+    
+    // const listItem = document.querySelector('#element');
+    
+    // console.log(listItem);
+    // console.log(value);
+    
+    </script>
+</html>

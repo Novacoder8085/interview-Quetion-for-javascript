@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice of Dom</title>
+  </head>
+  <body></body>
+  <script>
+    // ############################### create element and take a input from user then show to an html page##################
+    let arr = [];
+    let inputVal = document.createElement("input");
+    inputVal.type = "text";
+    inputVal.id = "int";
+    document.body.append(inputVal);
+    let button = document.createElement("button");
+    button.type = 'submit';
+    button.id = 'btn'
+    button.textContent = "Submit";
+    button.addEventListener('click', function(e){
+      let click = document.getElementById('int');
+      arr.push(click.value)
+      inputVal.value = '';
+      document.body.innerHTML = arr;
+    })
+    document.body.append(button);
+  </script>
+</html>

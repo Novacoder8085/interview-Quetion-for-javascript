@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="login-label">
+        <h1 class="login">Login</h1>
+      </div>
+      <div class="container">
+        <form method="post">
+          <div class="userName">
+            <h2 class="name">Username</h2>
+            <input
+              type="text"
+              name="text"
+              id="UserName"
+              class="input-box"
+              placeholder="Type your Username"
+              required
+            />
+          </div>
+          <div class="passWord">
+            <h2 class="name">password</h2>
+            <input
+              type="password"
+              name=""
+              id="PassWord"
+              class="input-box"
+              placeholder="Type your Password"
+              required
+            />
+          </div>
+          <div class="button">
+            <button type="submit" class="btn">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script>
+    let value = document.querySelector(".btn");
+    value.addEventListener("click", function (e) {
+      let inputVal = querySelector(".input-box");
+      if (inputVal.textContent == true) {
+        window.location.href = "http://127.0.0.1:5500/CRUD%20APP/crudApp.html";
+      }
+    });
+  </script>
+</html>

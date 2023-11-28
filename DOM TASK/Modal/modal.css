@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+#modal{
+    border: none;
+    width: 150px;
+    height: 57px;
+    background: #a0ffdc;
+    font-size: 18px;
+    font-weight: 500;
+}
+.alert{
+    border: 2px solid red;
+    overflow: hidden;
+    width: 35vw;
+    height: 40vh;
+    position: absolute;
+    top: -500px;
+    left: 487px; 
+ }

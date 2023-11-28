@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.side {
+  border-end-end-radius: 3r3e;
+  position: absolute;
+  background: #c7c7c7;
+  height: 90vh;
+}
+
+.side-item {
+  width: 170px;
+  padding: 10px;
+}
+.item {
+  padding-top: 30px;
+}
